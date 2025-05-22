@@ -1,0 +1,37 @@
+version: "2"
+
+linters:
+  default: all
+  disable:
+    - depguard
+    - varnamelen
+    - tagalign
+    - godox
+    - nlreturn
+
+  settings:
+    tagliatelle:
+      case:
+        rules:
+          json: snake
+    wsl:
+      allow-cuddle-declarations: true
+      allow-cuddle-used-in-block: true
+
+  exclusions:
+    rules:
+      - linters:
+          - wsl
+        text: "return statements should not be cuddled if block has more than two lines"
+      - linters:
+          - wsl
+        text: "branch statements should not be cuddled if block has more than two lines"
+
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - golines
+
+run:
+  tests: true
