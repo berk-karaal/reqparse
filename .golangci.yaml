@@ -26,6 +26,9 @@ linters:
       - linters:
           - wsl
         text: "branch statements should not be cuddled if block has more than two lines"
+      - linters:
+          - revive
+        text: "package-comments: should have a package comment"
 
 formatters:
   enable:
