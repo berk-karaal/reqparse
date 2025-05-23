@@ -1,0 +1,20 @@
+name: Coverage Report
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  coverage-report:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+      - name: Update coverage report
+        uses: ncruces/go-coverage-report@v0
+        with:
+          amend: true
