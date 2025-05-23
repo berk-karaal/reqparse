@@ -1,5 +1,10 @@
 # reqparse
 
+[![tests](https://github.com/berk-karaal/reqparse/actions/workflows/tests.yaml/badge.svg?branch=main&event=push)](https://github.com/berk-karaal/reqparse/actions/workflows/tests.yaml)
+[![Go Coverage](https://github.com/berk-karaal/reqparse/wiki/coverage.svg)](https://raw.githack.com/wiki/berk-karaal/reqparse/coverage.html)
+[![Go Report Card](https://goreportcard.com/badge/github.com/berk-karaal/reqparse)](https://goreportcard.com/report/github.com/berk-karaal/reqparse)
+[![Go Doc](https://pkg.go.dev/badge/github.com/berk-karaal/reqparse)](https://pkg.go.dev/github.com/berk-karaal/reqparse)
+
 reqparse is a Go package for parsing request query parameters into Go structs.
 
 :information_source: Headers and request body parsing will be added in the future.
