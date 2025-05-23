@@ -1,6 +1,7 @@
 module github.com/berk-karaal/reqparse
 
-go 1.23.4
+// minimum supported go version
+go 1.18
 
 require github.com/stretchr/testify v1.10.0
 
